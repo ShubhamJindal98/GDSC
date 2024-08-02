@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EA4335;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.logo img {
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.rounded-button {
+    background-color: #34A853;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rounded-button:hover {
+    background-color: #2C8E42;
+}
+
+/*Hero*/
+
+.hero {
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    background-image: url(images/hero_bg.jpg);
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.hero h1 {
+    font-size: 8em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.first {
+    color: #EA4335;
+}
+.second {
+    color: #FBBC05;
+}
+.third {
+    color: #34A853;
+}
+.fourth {
+    color: #4285F4;
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: drop 0.6s forwards;
+}
+
+@keyframes drop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Our events*/
+
+.Our_events h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+} 
+
+.events {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4285F4; /* Google Blue */
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event h3 {
+    margin-top: 0;
+    color: #EA4335;
+}
+
+.event p {
+    color: #555;
+}
+
+/*Our Team*/
+
+.team {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4285F4; /* Google Blue */
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team h3 {
+    margin-top: 0;
+    color: #EA4335;
+}
+
+.team p {
+    color: #555;
+}
+.blue_name {
+    color: #4285F4;
+}
+
+.aboutUs {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.aboutUs h1 {
+    font-size: 2.5em;
+    color: #4285F4; 
+    margin-bottom: 20px;
+}
+
+.aboutUs p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.aboutUs h2 {
+    font-size: 2em;
+    color: #EA4335;
+    margin-bottom: 20px;
+}
+
+.aboutUs ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.aboutUs ul li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.aboutUs ul li::before {
+    content: '✔';
+    color: #34A853;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+}
+
+.hiring {
+    margin-top: 5px;
+    text-align: center;
+    background-color:#f0f0f0;
+    height: 50px;
+    align-items: center;
+    align-content: center;
+}
+
+.joinUs {
+    background-color: #4285F4;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footer*/
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info, .feedback-form {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-info h2, .feedback-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #357ae8;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info ul li:last-child {
+    margin-bottom: 40px;
+}
+
+.contact-info ul li a:hover {
+    color: #FFD700; /* Google Yellow */
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.feedback-form input, .feedback-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #357ae8; /* Darker shade of Google Blue */
+}
+
+/*Sign In*/
+/* Modal Overlay */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Close Button */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ae8; /* Darker shade of Google Blue */
+}
+
+/* Open Modal Button */
+.open-modal {
+    background-color: #34A853;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.open-modal:hover {
+    background-color: #2C8E42;
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gdsc official website</title>
+    <link rel="stylesheet" href="gdsc.css">
+    <script src="gdsc.js" defer></script>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/google_logo.webp" alt="Google Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#events_id">Our Events</a></li>
+            <li><a href="#our_team_id">Our Team</a></li>
+            <li><a href="#joinUsId">Join Us</a></li>
+            <li><a href="#contactUsId">Contact Us</a></li>
+        </ul>
+        <button class="open-modal rounded-button">Sign In</button>
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Sign In</h2>
+                <form action="#" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1><span class="first letter">G</span><span class="second letter">D</span><span class="third letter">S</span><span class="fourth letter">C</span></h1>
+        </div>
+        <div class="aboutUs">
+            <h1>About</h1>
+            <p>Welcome to Developer Student Club at Chitkara University, Rajpura, Punjab. Google Developer Student Clubs (GDSC)  are community groups for students from any academic background in their undergraduate or graduate term. By joining a GDSC, students build their professional and personal network, get access to Google Developer Resources, and work together to build solutions for local problems in a peer - to - peer learning environment</p>
+            <h2>What we do:</h2>
+            <ul>
+                <li>Hands-on coding workshops (Beginner and Experienced)</li>
+                <li>Build side projects</li>
+                <li>Compete in the Solution Challenge</li>
+                <li>Networking events</li>
+                <li>Google Cloud Study Jams</li>
+                <li>GDG / GDE expert talks</li>
+            </ul>
+        </div>
+        <div class="Our_events" id="events_id">
+            <h2 style="color: #4285F4;">Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event">
+                    <h3>Event 1</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Date: 2024-08-05</p>
+                    <p>Description ---</p>
+                </div>
+                <div class="event">
+                    <h3>Event 2</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Date: 2024-08-10</p>
+                    <p>Description ---</p>
+                </div>
+                <div class="event">
+                    <h3>Event 3</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Date: 2024-08-15</p>
+                    <p>Description ---</p>
+                </div>
+            </div>
+            <h2 style="color: #34A853;">Recent events</h2>
+            <div class="events-grid">
+                <div class="event">
+                    <h3>Event 1</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Date: 2024-07-20</p>
+                    <p>Description ---</p>
+                </div>
+                <div class="event">
+                    <h3>Event 2</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Date: 2024-07-25</p>
+                    <p>Description ---</p>
+                </div>
+                <div class="event">
+                    <h3>Event 3</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Date: 2024-07-30</p>
+                    <p>Description ---</p>
+                </div>
+        </div>
+        <div class="Our_team" id="our_team_id">
+            <h2 style="color: #FBBC05;">Our Team</h2>
+            <div class="team-grid">
+                <div class="team">
+                    <h3>President</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Vrinda Vritti</p>
+                    <p style="color: #4285F4; font-size: 20px; font-weight: 600; cursor: pointer;">View profile</p>
+                </div>
+                <div class="team">
+                    <h3>Core Team Member</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Abhinav Tyagi</p>
+                    <p style="color: #4285F4; font-size: 20px; font-weight: 600; cursor: pointer;">View profile</p>
+                </div>
+                <div class="team">
+                    <h3>Core Team Member</h3>
+                    <img src="images/white-page.jpg" alt="not found" width="250px">
+                    <p>Harsh Goyal</p>
+                    <p style="color: #4285F4; font-size: 20px; font-weight: 600; cursor: pointer;">View profile</p>
+                </div>
+        </div>
+        <div class="hiring">
+            <button class="joinUs" id="joinUsId">Join Us</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content" id="contactUsId">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.gmail.com">Email</a></li>
+                </ul>
+                <img src="images/gdsc_logo.png" alt="not found" width="70px" height="35px">
+                <p style="font-size: 20px; font-weight: 600;"><span style="color: #EA4335;">Google</span> <span style="color: #FBBC05;"> Developer </span> <span style="color: #34A853;"> Student </span> <span style="color: #4285F4;">Clubs</span>
+                   </p>
+            </div>
+            <div class="feedback-form">
+                <h2>Feedback</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
