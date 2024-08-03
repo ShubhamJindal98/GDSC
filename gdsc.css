@@ -295,7 +295,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
+/*Contact Us*/
 .contact-info, .feedback-form {
     flex: 1;
     margin: 0 20px;
@@ -331,7 +331,7 @@ body {
 .contact-info ul li a:hover {
     color: #FFD700; 
 }
-
+/*Feedback Form*/
 .feedback-form form {
     display: flex;
     flex-direction: column;
