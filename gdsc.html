@@ -120,6 +120,24 @@
         </div>
         <div class="hiring">
             <button class="joinUs" id="joinUsId">Join Us</button>
+            <div id="joinUsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Join Us</h2>
+                    <form id="joinUsForm">
+                        <label for="resume">Upload Resume:</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        
+                        <label for="position">Choose Position:</label>
+                        <select id="position" name="position" required style="height: 20px;">
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="manager">Manager</option>
+                        </select>
+                        <button type="submit" style="margin-top: 10px;">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
